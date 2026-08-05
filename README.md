@@ -145,6 +145,7 @@ Add the following configuration block to your Antigravity custom MCP configurati
 
 You can verify the connection inside Antigravity by opening the chat window and typing:
 
+```
 > *"Can you give me a full list of all items currently in our inventory database?"*
 
 ```
