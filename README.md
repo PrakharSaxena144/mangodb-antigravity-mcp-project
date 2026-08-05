@@ -1,4 +1,3 @@
----
 ```markdown
 # Inventory Management MCP Server (MongoDB & Google Antigravity IDE)
 
