@@ -1,8 +1,4 @@
-MCP Project using Mangodb and Antigravity
----
-
-```markdown
-# Inventory Management MCP Server (MongoDB & Google Antigravity IDE)
+# MCP Project using MongoDB and Antigravity
 
 A hands-on implementation of an Agentic Tool server using the **Model Context Protocol (MCP)**. This project bridges **Google Antigravity IDE** (acting as an LLM agent client) with a **MongoDB** database (local instance or MongoDB Atlas cloud cluster) to enable natural language inventory tracking, querying, and mutation.
 
@@ -10,29 +6,28 @@ A hands-on implementation of an Agentic Tool server using the **Model Context Pr
 
 ## Architecture & System Flow
 
-
-```
-
+```text
 +-----------------------------------+
 |     Google Antigravity IDE        |  <-- MCP Client / Host
 |  (Natural Language LLM Interface) |
 +-----------------------------------+
-|
+|                                   |
 | JSON-RPC over Standard Input/Output (stdio)
-v
+|                                   |
+v                                   |
 +-----------------------------------+
 |    inventory-mcp-server.py        |  <-- MCP Server (Python + uv)
 |  - MCP v2.0 (`MCPServer`)         |
 |  - Schema Validation & Formatting |
 +-----------------------------------+
-|
+|                                   |
 | PyMongo Driver (`pymongo` + `dnspython`)
-v
+|                                   |
+v                                   |
 +-----------------------------------+
 |      MongoDB Database             |  <-- Persistence Layer
 |  (`aaitech_inventory.inventory`)   |      (Local or MongoDB Atlas)
 +-----------------------------------+
-
 ```
 
 ### System Flow Breakdown
