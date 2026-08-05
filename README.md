@@ -1,5 +1,6 @@
 MCP Project using Mangodb and Antigravity
 ---
+
 ```markdown
 # Inventory Management MCP Server (MongoDB & Google Antigravity IDE)
 
