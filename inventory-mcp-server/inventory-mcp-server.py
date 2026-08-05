@@ -1,5 +1,5 @@
 import os
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer as FastMCP
 from pymongo import MongoClient
 
 mcp = FastMCP(name="inventory_mcp")
