@@ -2,8 +2,6 @@
 
 A hands-on implementation of an Agentic Tool server using the **Model Context Protocol (MCP)**. This project bridges **Google Antigravity IDE** (acting as an LLM agent client) with a **MongoDB** database (local instance or MongoDB Atlas cloud cluster) to enable natural language inventory tracking, querying, and mutation.
 
----
-
 ## Architecture & System Flow
 
 ```text
